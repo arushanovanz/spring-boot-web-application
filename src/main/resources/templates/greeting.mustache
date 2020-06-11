@@ -3,8 +3,10 @@
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <input type = "hidden" name = "_csrf"  value = "{{_csrf.token}}"/>
 </head>
 <body>
-<div>hello, {{name}}</div>
+<div>Hello, User</div>
+<a href="/main">Main Page</a>
 </body>
 </html>
