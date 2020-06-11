@@ -1,7 +1,13 @@
 package com.example.sweater.domain;
 
-import javax.persistence.Entity;
+import org.springframework.security.core.GrantedAuthority;
 
-public enum Role {
-    USER
+
+public enum Role implements GrantedAuthority {
+    USER;
+
+    @Override
+    public String getAuthority() {
+        return name();
+    }
 }
